@@ -10,6 +10,7 @@ WORKDIR /var/www/html/
 RUN unzip carvilla
 RUN mv  carvilla-html/*  .
 
+# expose to port 80
 EXPOSE 80
 
 CMD httpd -DFOREGROUND
