@@ -10,7 +10,7 @@ RUN rm -rf /var/www/html/index.html
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip carvilla.zip
-RUN mv  carvilla-html/*  .
+RUN mv carvilla-html/*  .
 
 # expose to port 80
 EXPOSE 80
