@@ -1,5 +1,5 @@
 
-FROM centos:07
+FROM centos:7
 
 LABEL  devops  ="Akshay"
 
