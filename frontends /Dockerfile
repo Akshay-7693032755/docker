@@ -1,12 +1,15 @@
-FROM  centos:7
 
-LABEL   devops = "Akshay_c"
+FROM centos:07
 
-Run    yum  install httpd -y 
-copy index.html /var/www/html/
-run  chmod 777 -r /var/www/
-run chmod 644 /var/www/html/index.html
+LABEL Devops ="Anup_Dudhe"
 
-Expose  80
-CMD httpd -DFORGROUND
+Run yum install httpd -y
+Copy index.html /var/www/html/
+Run chmod 777 -r /var/www/
+Run chmod 644 /var/www/html/index.html
+
+Expose 80
+
+
+CMD httpd -DFOREGROUND
 
