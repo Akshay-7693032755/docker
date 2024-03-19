@@ -1,7 +1,6 @@
-
 FROM centos:7
 
-LABEL  devops  ="Akshay"
+LABEL Devops ="akshay"
 
 Run yum install httpd -y
 Copy index.html /var/www/html/
@@ -12,4 +11,3 @@ Expose 80
 
 
 CMD httpd -DFOREGROUND
-
