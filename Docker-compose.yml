@@ -1,7 +1,7 @@
 version : "3.8"
 
 services:
-   frontend:
+   frontendimg : 
       build : /root/docker/frontends
       container_name: frontend
       ports :
@@ -11,10 +11,9 @@ services:
     backend:
       build :/root/docker/backend  
       container_name: backend
-      ports: 
-       - "8080:8080"
-      depeonds_on :
-      - frontend
-      network_mode : bridge
-
+     ports:
+     - "8080:8080"
+     network_mode: bridge
+     depends_on:
+     - "frontendimg"
 
