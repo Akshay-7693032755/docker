@@ -9,7 +9,7 @@ services:
       network_mode: bridge
 
     backendimg
-     build :/root/docker/frontends
+     build :/root/docker/backend  
      container_name: backend
      ports: 
        - "8080:8080"
