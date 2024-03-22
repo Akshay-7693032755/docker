@@ -2,14 +2,14 @@ version : "2.24.7"
 
 services :   
     frontendimg : 
-      build : /root/docker/frontends
+      build : ./frontends
       container_name: frontend
       ports :
         - "80:80"
       network_mode: bridge
 
     backend:
-      build : /root/docker/backend  
+      build : ./backend  
       container_name : backend
       ports:
         - "8080:8080"
