@@ -5,15 +5,15 @@ services :
       build : /root/docker/frontends
       container_name: frontend
       ports :
-      - "80:80"
+        - "80:80"
       network_mode: bridge
 
     backend:
-      build :/root/docker/backend  
-      container_name: backend
+      build : /root/docker/backend  
+      container_name : backend
       ports:
-      - "8080:8080"
+        - "8080:8080"
       network_mode: bridge
       depends_on:
-     - "frontendimg" 
+        - "frontendimg" 
 
