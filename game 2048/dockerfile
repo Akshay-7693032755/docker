@@ -1,4 +1,4 @@
-FROM UBUNTU:22.04
+FROM ubuntu:22.04
 RUN apt-get update
 RUN apy-get install -y nginx zip curl
 RUN  echo "deamon off;"  >>/etc/nginx/nginx.conf
