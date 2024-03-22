@@ -1,7 +1,7 @@
 version : "2.24.7"
 
-services:
-   frontendimg : 
+services :   
+    frontendimg : 
       build : /root/docker/frontends
       container_name: frontend
       ports :
