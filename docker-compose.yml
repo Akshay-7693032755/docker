@@ -15,5 +15,5 @@ services:
       - "8080:8080"
       network_mode: bridge
       depends_on:
-     - "frontendimg"
+     - "frontendimg" 
 
